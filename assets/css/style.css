@@ -8,14 +8,14 @@
   --purple:       #8B2D9F;
   --purple-dark:  #6B1E7F;
   --purple-light: #B94FCC;
-  --purple-bg:    #1B0A22;
+  --purple-bg:    #F7EDFB;
 
   --black:     #0D0D0D;
   --gray-900:  #1A1A1A;
-  --gray-700:  #A0A0A0;
-  --gray-500:  #666666;
-  --gray-200:  #272727;
-  --gray-100:  #181818;
+  --gray-700:  #4A4A4A;
+  --gray-500:  #888888;
+  --gray-200:  #E8E8E8;
+  --gray-100:  #F5F5F5;
   --white:     #FFFFFF;
 
   --ff-heading: 'Montserrat', sans-serif;
@@ -36,10 +36,10 @@
   --radius-lg:   24px;
   --radius-full: 999px;
 
-  --shadow-sm:     0 2px 8px rgba(0, 0, 0, 0.5);
-  --shadow-md:     0 4px 24px rgba(0, 0, 0, 0.55);
-  --shadow-lg:     0 8px 48px rgba(0, 0, 0, 0.65);
-  --shadow-purple: 0 8px 32px rgba(139, 45, 159, 0.35);
+  --shadow-sm:     0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md:     0 4px 24px rgba(0, 0, 0, 0.10);
+  --shadow-lg:     0 8px 48px rgba(0, 0, 0, 0.16);
+  --shadow-purple: 0 8px 32px rgba(139, 45, 159, 0.28);
 
   --transition:      0.3s ease;
   --transition-slow: 0.6s ease;
@@ -1789,157 +1789,5 @@ h1, h2, h3, h4 {
 
   .portfolio__item {
     padding: 24px 20px;
-  }
-}
-
-/* ============================================================
-   TEMA ESCURO — SEJA CREATE (preto · branco · roxo)
-   ============================================================ */
-
-/* --- Base --- */
-body {
-  background: #0D0D0D;
-  color: #CCCCCC;
-}
-
-/* --- Header --- */
-.header.scrolled {
-  background: rgba(10, 10, 10, 0.96);
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06);
-}
-
-.nav__links a:not(.btn) {
-  color: rgba(255, 255, 255, 0.65);
-}
-
-.nav__toggle span {
-  background: rgba(255, 255, 255, 0.8);
-}
-
-/* --- Títulos de seção --- */
-.section__title {
-  color: #FFFFFF;
-}
-
-/* --- Hero --- */
-.hero {
-  background: #0D0D0D;
-}
-
-.hero__headline {
-  color: #FFFFFF;
-}
-
-.hero__sub {
-  color: rgba(255, 255, 255, 0.55);
-}
-
-.hero__tags {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.hero__scroll {
-  color: rgba(255, 255, 255, 0.28);
-}
-
-/* --- Diferencial --- */
-.diferencial {
-  background: #0D0D0D;
-}
-
-.diferencial__card h3 {
-  color: #FFFFFF;
-}
-
-/* --- Serviços --- */
-.servicos {
-  background: #111111;
-}
-
-.servicos__card h3 {
-  color: #FFFFFF;
-}
-
-.servicos__card:hover {
-  background: #202020;
-  border-color: rgba(139, 45, 159, 0.22);
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.55);
-}
-
-/* --- Clientes --- */
-.clientes__item--cream {
-  background: #2A2518;
-}
-
-/* --- Sobre --- */
-.sobre {
-  background: #0D0D0D;
-}
-
-.sobre__content h2 {
-  color: #FFFFFF;
-}
-
-.sobre__lead {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.sobre__content p {
-  color: rgba(255, 255, 255, 0.55);
-}
-
-.sobre__list li {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-/* --- Depoimentos --- */
-.depoimentos__card {
-  background: #1A1A1A;
-  border-color: rgba(255, 255, 255, 0.07);
-}
-
-.depoimentos__card p {
-  color: rgba(255, 255, 255, 0.65);
-}
-
-.depoimentos__avatar {
-  background: rgba(139, 45, 159, 0.18);
-  color: var(--purple-light);
-}
-
-.depoimentos__author strong {
-  color: #FFFFFF;
-}
-
-.depoimentos__author span {
-  color: rgba(255, 255, 255, 0.4);
-}
-
-/* --- FAQ --- */
-.faq {
-  background: #111111;
-}
-
-.faq__header h2 {
-  color: #FFFFFF;
-}
-
-.faq__header p {
-  color: rgba(255, 255, 255, 0.55);
-}
-
-.faq__question {
-  color: rgba(255, 255, 255, 0.85);
-}
-
-.faq__answer p {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-/* --- Menu mobile --- */
-@media (max-width: 768px) {
-  .nav__links {
-    background: #0D0D0D;
-    border-top-color: rgba(255, 255, 255, 0.07);
   }
 }
