@@ -1368,28 +1368,42 @@ h1, h2, h3, h4 {
   color: var(--purple-light);
 }
 
-.footer__social-links {
+.footer__social-icons {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-bottom: 16px;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
-.footer__social-btn {
+.footer__icon-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 14px;
+  justify-content: center;
   color: rgba(255, 255, 255, 0.55);
-  transition: color var(--transition);
+  transition: all var(--transition);
+  flex-shrink: 0;
 }
-.footer__social-btn:hover {
-  color: var(--purple-light);
+
+.footer__icon-btn:hover {
+  background: var(--purple);
+  border-color: var(--purple);
+  color: var(--white);
+  transform: translateY(-3px);
 }
 
 .footer__email {
   font-size: 13px;
   color: rgba(255, 255, 255, 0.35);
+  transition: color var(--transition);
+}
+
+.footer__email:hover {
+  color: rgba(255, 255, 255, 0.65);
 }
 
 .footer__bottom {
@@ -1502,10 +1516,12 @@ h1, h2, h3, h4 {
   padding: 18px;
   box-sizing: border-box;
   object-fit: contain;
-  transition: transform 0.45s ease;
+  filter: grayscale(100%) opacity(0.62);
+  transition: filter 0.5s ease, transform 0.45s ease;
 }
 
 .clientes__item:hover img {
+  filter: grayscale(0%) opacity(1);
   transform: scale(1.06);
 }
 
@@ -1562,14 +1578,21 @@ h1, h2, h3, h4 {
     grid-column: 1 / -1;
     display: flex;
     flex-direction: row;
-    gap: 48px;
-    align-items: flex-start;
+    align-items: center;
+    gap: 24px;
   }
 
   .footer__social h4 {
     margin-bottom: 0;
     white-space: nowrap;
-    padding-top: 3px;
+  }
+
+  .footer__social .footer__social-icons {
+    margin-bottom: 0;
+  }
+
+  .footer__social .footer__email {
+    margin-left: auto;
   }
 }
 
@@ -1721,11 +1744,26 @@ h1, h2, h3, h4 {
     grid-column: span 1;
   }
 
-  /* ---- Clientes ---- */
+  /* ---- Clientes — carrossel horizontal ---- */
   .clientes__grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 14px;
-    margin-top: 36px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 12px;
+    margin-top: 28px;
+    padding-bottom: 8px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .clientes__grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .clientes__item {
+    flex: 0 0 148px;
+    scroll-snap-align: start;
   }
 
   /* ---- Sobre ---- */
@@ -1817,6 +1855,15 @@ h1, h2, h3, h4 {
     grid-column: span 2;
     flex-direction: column;
     gap: 16px;
+    align-items: flex-start;
+  }
+
+  .footer__social .footer__social-icons {
+    margin-bottom: 8px;
+  }
+
+  .footer__social .footer__email {
+    margin-left: 0;
   }
 
   .footer__bottom-inner {
@@ -1894,9 +1941,8 @@ h1, h2, h3, h4 {
   }
 
   /* Clientes */
-  .clientes__grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+  .clientes__item {
+    flex: 0 0 132px;
   }
 
   /* Sobre */
