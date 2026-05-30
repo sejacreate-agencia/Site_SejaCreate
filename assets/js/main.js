@@ -1,5 +1,5 @@
 /* ============================================================
-   SEJA CREATE — MAIN JAVASCRIPT
+   SEJA CREATE — MAIN JAVASCRIPT (v2)
    ============================================================ */
 
 (function () {
@@ -14,7 +14,7 @@
     header.classList.toggle('scrolled', window.scrollY > 60);
   }
   window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll(); // run once on load
+  onScroll();
 
   // ===== NAVIGATION: MOBILE HAMBURGER =====
   function closeMenu() {
@@ -45,13 +45,13 @@
   // ===== SCROLL ANIMATIONS (IntersectionObserver) =====
   const revealEls = document.querySelectorAll('.reveal, .reveal--right, .reveal--left');
 
-  // Add stagger delays to card grids
+  // Stagger delays for card grids
   const staggerParents = document.querySelectorAll(
-    '.diferencial__grid, .metodo__steps, .servicos__grid, .depoimentos__grid, .faq__list'
+    '.dor__grid, .solucao__steps, .servicos__grid, .depoimentos__grid'
   );
   staggerParents.forEach(parent => {
     parent.querySelectorAll('.reveal').forEach((el, i) => {
-      el.style.transitionDelay = (i * 0.08) + 's';
+      el.style.transitionDelay = (i * 0.07) + 's';
     });
   });
 
@@ -69,6 +69,41 @@
 
   revealEls.forEach(el => revealObserver.observe(el));
 
+  // ===== ANIMATED STAT COUNTERS =====
+  const counters = document.querySelectorAll('[data-count]');
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function animateCount(el) {
+    const target = parseInt(el.getAttribute('data-count'), 10);
+    const suffix = el.getAttribute('data-suffix') || '';
+    if (prefersReduced || isNaN(target)) {
+      el.textContent = suffix.includes('+') ? '+' + target : target + suffix;
+      return;
+    }
+    const duration = 1400;
+    const start = performance.now();
+    function tick(now) {
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3); // easeOutCubic
+      const value = Math.round(eased * target);
+      el.textContent = suffix.includes('+') ? '+' + value : value + suffix;
+      if (progress < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+
+  if (counters.length) {
+    const countObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCount(entry.target);
+          countObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.6 });
+    counters.forEach(el => countObserver.observe(el));
+  }
+
   // ===== SMOOTH SCROLL (with header offset) =====
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -79,7 +114,7 @@
       if (!target) return;
 
       e.preventDefault();
-      const offset = 80; // header height
+      const offset = 80;
       const top    = target.getBoundingClientRect().top + window.pageYOffset - offset;
       window.scrollTo({ top, behavior: 'smooth' });
     });
@@ -109,19 +144,14 @@
     question.addEventListener('click', () => {
       const isOpen = answer.classList.contains('open');
 
-      // Close all items
       document.querySelectorAll('.faq__answer').forEach(a => a.classList.remove('open'));
       document.querySelectorAll('.faq__question').forEach(q => q.setAttribute('aria-expanded', 'false'));
 
-      // Open the clicked one (if it was closed)
       if (!isOpen) {
         answer.classList.add('open');
         question.setAttribute('aria-expanded', 'true');
       }
     });
   });
-
-  // ===== PORTFOLIO IMAGES: ensure no overflow clipping cuts stat badge =====
-  // (handled via CSS overflow: visible on .hero__img-wrap)
 
 })();

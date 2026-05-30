@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Seja Create — Agência de marketing estratégico em Natal/RN. Transformamos marcas em negócios posicionados, desejados e preparados para vender no digital." />
-  <meta property="og:title" content="Seja Create — Estratégia. Narrativa. Presença Digital." />
-  <meta property="og:description" content="Marcas fortes não apenas aparecem. Elas permanecem. A Seja Create transforma marcas em presença, desejo e escolha no digital." />
-  <title>Seja Create — Estratégia. Narrativa. Presença Digital.</title>
+  <meta name="description" content="Seja Create · Agência de marketing estratégico para profissionais liberais que não têm tempo de cuidar das redes. Você atende. A gente aparece, posiciona e vende por você." />
+  <meta property="og:title" content="Seja Create | Você atende. A gente aparece." />
+  <meta property="og:description" content="Profissional liberal sem tempo para as redes? A Seja Create cuida da sua imagem, posicionamento e presença digital para você ser lembrado, desejado e escolhido." />
+  <meta property="og:type" content="website" />
+  <title>Seja Create | Você atende. A gente aparece.</title>
   <link rel="icon" type="image/png" href="Identidade%20Visual/SejaCreate_Logo_Modelo_3_01.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
@@ -18,19 +19,18 @@
   <!-- ===== NAVIGATION ===== -->
   <header class="header" id="header">
     <nav class="nav container">
-      <a href="#" class="nav__logo">
+      <a href="#hero" class="nav__logo" aria-label="Seja Create, início">
         <img src="Identidade%20Visual/SejaCreate_Logo_Modelo_2_01.png" alt="Seja Create" />
       </a>
       <ul class="nav__links" id="navLinks">
         <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#clientes">Portfolio</a></li>
+        <li><a href="#resultados">Resultados</a></li>
+        <li><a href="#clientes">Clientes</a></li>
         <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#contato" class="btn btn--outline-nav">Fale Conosco</a></li>
+        <li><a href="#contato" class="btn btn--outline-nav">Quero vender mais</a></li>
       </ul>
       <button class="nav__toggle" id="navToggle" aria-label="Abrir menu">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </button>
     </nav>
   </header>
@@ -40,77 +40,148 @@
     <!-- ===== HERO ===== -->
     <section class="hero" id="hero">
       <div class="hero__bg-shape"></div>
-
-      <!-- ===== VÍDEO HERO — descomentar quando o vídeo estiver pronto =====
-      <div class="hero__video-wrap">
-        <video class="hero__video" autoplay muted loop playsinline>
-          <source src="assets/video/hero-bg.mp4" type="video/mp4" />
-        </video>
-        <div class="hero__video-overlay"></div>
-      </div>
-      ===== fim bloco vídeo ===== -->
-
       <div class="container hero__inner">
         <div class="hero__text reveal">
-          <span class="hero__eyebrow">Agência de Marketing Estratégico</span>
+          <span class="hero__eyebrow">Marketing para profissionais sem tempo</span>
           <h1 class="hero__headline">
-            Marcas fortes não<br />apenas aparecem.
-            <br /><em>Elas permanecem.</em>
+            Tudo o que sua marca precisa,<br />
+            <em>sem você precisar fazer.</em>
           </h1>
           <p class="hero__sub">
-            Estratégia, narrativa e presença digital para marcas que desejam ser lembradas, desejadas e escolhidas.
+            Você é excelente no que faz. Mas o dia não tem 30 horas. A Seja Create assume suas redes
+            com estratégia, estética e intenção. Você atende. A gente aparece, posiciona e vende por você.
           </p>
           <div class="hero__actions">
-            <a href="#contato" class="btn btn--primary">Quero posicionar minha marca</a>
-          </div>
-          <div class="hero__tags">
-            <span>Estratégia</span>
-            <span class="hero__tags-sep">·</span>
-            <span>Narrativa</span>
-            <span class="hero__tags-sep">·</span>
-            <span>Presença Digital</span>
+            <a href="https://wa.me/5584994137882?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Seja%20Create%20e%20quero%20delegar%20minhas%20redes." class="btn btn--primary btn--lg" target="_blank" rel="noopener">Quero delegar minhas redes</a>
+            <a href="#servicos" class="btn btn--outline-nav" style="border-color:rgba(255,255,255,.3);color:#fff;">Ver o que fazemos</a>
           </div>
         </div>
         <div class="hero__visual reveal reveal--right">
           <div class="hero__img-wrap">
-            <img src="Fotos_CEO/-(HM)%20(56).jpg" alt="Ruth Medeiros — Fundadora da Seja Create" loading="eager" />
+            <img src="Fotos_CEO/-(HM)%20(56).jpg" alt="Ruth Medeiros, Fundadora da Seja Create" loading="eager" />
             <div class="hero__img-badge">
               <img src="Identidade%20Visual/SejaCreate_Logo_Modelo_3_01.png" alt="" aria-hidden="true" />
             </div>
           </div>
         </div>
       </div>
-      <a href="#diferencial" class="hero__scroll" aria-label="Rolar para baixo">
+      <a href="#dor" class="hero__scroll" aria-label="Rolar para baixo">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <polyline points="6 9 12 15 18 9"></polyline>
         </svg>
       </a>
     </section>
 
-    <!-- ===== DIFERENCIAL ===== -->
-    <section class="diferencial" id="diferencial">
+    <!-- ===== MARQUEE BANNER ===== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span class="marquee__item">Gestão de Redes</span>
+          <span class="marquee__item">Identidade Visual</span>
+          <span class="marquee__item">Tráfego Pago</span>
+          <span class="marquee__item">Sites</span>
+          <span class="marquee__item">Consultoria de Posicionamento</span>
+          <span class="marquee__item">Produção Audiovisual</span>
+        </div>
+        <div class="marquee__group">
+          <span class="marquee__item">Gestão de Redes</span>
+          <span class="marquee__item">Identidade Visual</span>
+          <span class="marquee__item">Tráfego Pago</span>
+          <span class="marquee__item">Sites</span>
+          <span class="marquee__item">Consultoria de Posicionamento</span>
+          <span class="marquee__item">Produção Audiovisual</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== DOR / IDENTIFICAÇÃO ===== -->
+    <section class="dor" id="dor">
       <div class="container">
-        <p class="section__overline reveal">Por que a Seja Create</p>
-        <h2 class="section__title reveal">
-          Não criamos apenas conteúdos.<br />
-          <span class="text--purple">Criamos percepção, posicionamento<br />e desejo em torno de marcas.</span>
-        </h2>
-        <div class="diferencial__grid">
-          <div class="diferencial__card reveal">
-            <div class="diferencial__num">01</div>
-            <h3>Estratégia antes de tudo</h3>
-            <p>Cada conteúdo tem um propósito. Trabalhamos com posicionamento claro, não criatividade aleatória.</p>
+        <div class="dor__head reveal">
+          <p class="section__overline">Talvez você se identifique</p>
+          <h2 class="section__title dor__title">
+            Seu talento merece ser visto. <span class="text--grad">Mas a agenda não te deixa.</span>
+          </h2>
+          <p class="section__lead">
+            Você sabe que precisa aparecer. Mas entre clientes, prazos e a vida real, o Instagram
+            sempre fica para depois. E "depois" custa caro.
+          </p>
+        </div>
+        <div class="dor__grid">
+          <div class="dor__card reveal">
+            <div class="dor__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <h3>Feed parado há semanas</h3>
+              <p>Quando finalmente lembra de postar, já passou tempo demais. E a constância é o que constrói autoridade.</p>
+            </div>
           </div>
-          <div class="diferencial__card reveal">
-            <div class="diferencial__num">02</div>
-            <h3>Resultado, não só beleza</h3>
-            <p>Estética é obrigatória. Mas o objetivo é transformar presença digital em reconhecimento e faturamento.</p>
+          <div class="dor__card reveal">
+            <div class="dor__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <div>
+              <h3>Posta por obrigação, sem resultado</h3>
+              <p>Conteúdo solto, sem estratégia, não vende. Vira só mais um post no meio de milhões.</p>
+            </div>
           </div>
-          <div class="diferencial__card reveal">
-            <div class="diferencial__num">03</div>
-            <h3>Conversão acima do engajamento</h3>
-            <p>Curtidas não pagam boleto. Nossa comunicação é estruturada para gerar clientes e vendas reais.</p>
+          <div class="dor__card reveal">
+            <div class="dor__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 6l-9.5 9.5-5-5L1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            </div>
+            <div>
+              <h3>O concorrente aparece mais que você</h3>
+              <p>Quem comunica melhor leva o cliente, mesmo entregando menos. Posicionamento define a escolha.</p>
+            </div>
           </div>
+          <div class="dor__card reveal">
+            <div class="dor__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <div>
+              <h3>Não sabe nem por onde começar</h3>
+              <p>O que postar? Quando? Para quem? Sem direção, cada post vira uma decisão cansativa a mais.</p>
+            </div>
+          </div>
+        </div>
+        <p class="dor__punch reveal">
+          Você não precisa de mais uma tarefa. <span>Precisa de quem assuma essa por você.</span>
+        </p>
+        <div class="section-cta reveal">
+          <a href="#contato" class="btn btn--primary btn--lg">Quero tirar esse peso</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SOLUÇÃO / COMO FUNCIONA ===== -->
+    <section class="solucao" id="solucao">
+      <div class="container">
+        <div class="solucao__head reveal">
+          <p class="section__overline section__overline--light">Como funciona</p>
+          <h2 class="section__title">Você delega. A gente executa.</h2>
+          <p>Sem reuniões intermináveis, sem você ter que virar especialista em marketing.
+            Um processo simples para tirar o peso das suas costas e colocar sua marca no lugar certo.</p>
+        </div>
+        <div class="solucao__steps">
+          <div class="solucao__step reveal">
+            <div class="solucao__num">01 · DIAGNÓSTICO</div>
+            <h3>A gente entende você</h3>
+            <p>Uma conversa para mergulhar no seu negócio, seu público e seus objetivos. Estratégia começa no diagnóstico, não no post.</p>
+          </div>
+          <div class="solucao__step reveal">
+            <div class="solucao__num">02 · ESTRATÉGIA</div>
+            <h3>A gente monta o plano</h3>
+            <p>Posicionamento, narrativa e calendário de conteúdo desenhados para gerar percepção, autoridade e vendas, não só curtidas.</p>
+          </div>
+          <div class="solucao__step reveal">
+            <div class="solucao__num">03 · EXECUÇÃO</div>
+            <h3>A gente faz acontecer</h3>
+            <p>Produção, design, publicação e otimização. Você acompanha os resultados enquanto foca no que faz de melhor: seu trabalho.</p>
+          </div>
+        </div>
+        <div class="section-cta reveal">
+          <a href="#contato" class="btn btn--light btn--lg">Quero começar agora</a>
         </div>
       </div>
     </section>
@@ -118,84 +189,175 @@
     <!-- ===== SERVIÇOS ===== -->
     <section class="servicos" id="servicos">
       <div class="container">
-        <p class="section__overline reveal">O que fazemos</p>
-        <h2 class="section__title reveal">Soluções estratégicas<br /><span class="text--purple">para cada etapa da sua marca</span></h2>
+        <div class="servicos__head reveal">
+          <p class="section__overline">O que tiramos das suas costas</p>
+          <h2 class="section__title">Tudo que sua marca precisa<br /><span class="text--grad">em um só lugar.</span></h2>
+        </div>
         <div class="servicos__grid">
           <div class="servicos__card reveal">
             <span class="servicos__num">01</span>
             <h3>Gestão de Redes Sociais</h3>
-            <p>Planejamento, produção e publicação de conteúdo estratégico que posiciona sua marca e gera resultados consistentes. Não apenas posts — uma presença digital com propósito claro.</p>
-            <a href="#contato" class="servicos__link">Solicitar proposta →</a>
+            <p>Planejamento, produção e publicação de conteúdo estratégico. Você nunca mais olha para um feed parado se perguntando "o que eu posto hoje?".</p>
+            <a href="https://wa.me/5584994137882?text=Quero%20saber%20sobre%20Gest%C3%A3o%20de%20Redes%20Sociais." class="servicos__link" target="_blank" rel="noopener">Quero isso <span>→</span></a>
           </div>
           <div class="servicos__card reveal">
             <span class="servicos__num">02</span>
             <h3>Identidade Visual</h3>
-            <p>Criação de marca visual coesa, elegante e comercialmente forte, que comunica quem você é antes mesmo de você falar.</p>
-            <a href="#contato" class="servicos__link">Solicitar proposta →</a>
+            <p>Uma marca visual coesa, elegante e comercialmente forte, que comunica quem você é antes mesmo de você falar.</p>
+            <a href="https://wa.me/5584994137882?text=Quero%20saber%20sobre%20Identidade%20Visual." class="servicos__link" target="_blank" rel="noopener">Quero isso <span>→</span></a>
           </div>
           <div class="servicos__card reveal">
             <span class="servicos__num">03</span>
             <h3>Tráfego Pago</h3>
-            <p>Gestão estratégica de anúncios no Meta Ads e Google Ads. Campanhas segmentadas, otimizadas e com foco em resultado real para o seu negócio.</p>
-            <a href="#contato" class="servicos__link">Solicitar proposta →</a>
+            <p>Anúncios no Meta e Google Ads que colocam você na frente do cliente certo. Segmentação, otimização e foco em resultado real.</p>
+            <a href="https://wa.me/5584994137882?text=Quero%20saber%20sobre%20Tr%C3%A1fego%20Pago." class="servicos__link" target="_blank" rel="noopener">Quero isso <span>→</span></a>
           </div>
           <div class="servicos__card reveal">
             <span class="servicos__num">04</span>
-            <h3>Páginas de Vendas</h3>
-            <p>Páginas persuasivas com copywriting estratégico e design orientado à conversão que trabalham por você 24h.</p>
-            <a href="#contato" class="servicos__link">Solicitar proposta →</a>
+            <h3>Sites</h3>
+            <p>Sites e páginas com copy estratégica e design que converte. Um vendedor seu trabalhando 24h, sem folga e sem reclamar.</p>
+            <a href="https://wa.me/5584994137882?text=Quero%20saber%20sobre%20Sites." class="servicos__link" target="_blank" rel="noopener">Quero isso <span>→</span></a>
           </div>
           <div class="servicos__card reveal">
             <span class="servicos__num">05</span>
             <h3>Consultoria de Posicionamento</h3>
-            <p>Diagnóstico e estratégia para marcas que precisam se reposicionar, ganhar autoridade e vender mais no digital.</p>
-            <a href="#contato" class="servicos__link">Solicitar proposta →</a>
+            <p>Diagnóstico e estratégia para marcas que precisam ganhar autoridade, clareza e parar de competir por preço.</p>
+            <a href="https://wa.me/5584994137882?text=Quero%20saber%20sobre%20Consultoria%20de%20Posicionamento." class="servicos__link" target="_blank" rel="noopener">Quero isso <span>→</span></a>
           </div>
           <div class="servicos__card reveal">
             <span class="servicos__num">06</span>
             <h3>Produção Audiovisual</h3>
-            <p>Reels, vídeos e conteúdos visuais que comunicam com impacto, estética e intenção estratégica em cada frame.</p>
-            <a href="#contato" class="servicos__link">Solicitar proposta →</a>
+            <p>Reels, vídeos e conteúdos que comunicam com impacto e estética. Você na frente das câmeras só quando (e se) quiser.</p>
+            <a href="https://wa.me/5584994137882?text=Quero%20saber%20sobre%20Produ%C3%A7%C3%A3o%20Audiovisual." class="servicos__link" target="_blank" rel="noopener">Quero isso <span>→</span></a>
           </div>
         </div>
+        <div class="section-cta reveal">
+          <a href="#contato" class="btn btn--primary btn--lg">Pedir minha proposta</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RESULTADOS / PROVA REAL ===== -->
+    <section class="resultados" id="resultados">
+      <div class="container resultados__inner">
+        <div class="resultados__content reveal reveal--left">
+          <p class="section__overline">Resultado de verdade</p>
+          <h2 class="section__title">Curtida não paga boleto.<br /><span class="text--grad">Resultado, sim.</span></h2>
+          <p class="resultados__lead">
+            A gente não está aqui para inflar números de vaidade. Está aqui para colocar dinheiro no
+            seu caixa e a sua marca na cabeça do cliente. Quando o digital é feito com intenção, o
+            resultado aparece onde importa.
+          </p>
+          <div class="resultados__stats">
+            <div class="resultados__stat">
+              <strong data-count="5" data-suffix="+">+5</strong>
+              <span>anos de mercado</span>
+            </div>
+            <div class="resultados__stat">
+              <strong data-count="100" data-suffix="+">+100</strong>
+              <span>marcas atendidas</span>
+            </div>
+            <div class="resultados__stat">
+              <strong>🌎</strong>
+              <span>clientes no mundo todo</span>
+            </div>
+          </div>
+          <p class="resultados__quote">"R$ 19 mil reais em um único dia, fruto de estratégia, parceria e execução do jeito certo."</p>
+        </div>
+        <div class="resultados__proof reveal reveal--right">
+          <img src="PROVA%20SOCIAL/resultado_3.png" alt="Resultado real de campanha da Seja Create" loading="lazy" />
+          <span class="resultados__proof-tag">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Caso real de cliente
+          </span>
+        </div>
+      </div>
+      <div class="container section-cta reveal">
+        <a href="#contato" class="btn btn--primary btn--lg">Quero resultados assim</a>
       </div>
     </section>
 
     <!-- ===== CLIENTES ===== -->
     <section class="clientes" id="clientes">
       <div class="container">
-        <p class="section__overline clientes__overline reveal">Marcas que transformamos</p>
-        <h2 class="section__title clientes__title reveal">Empresas que <span class="text--purple">confiam em nós</span></h2>
-        <div class="clientes__grid">
-          <div class="clientes__item reveal"><img src="Logo_clientes/1.png" alt="GN Construções" loading="lazy" /></div>
-          <div class="clientes__item clientes__item--zoom reveal"><img src="Logo_clientes/2.png" alt="Ariane Souza" loading="lazy" /></div>
-          <div class="clientes__item reveal"><img src="Logo_clientes/3.png" alt="Uniodonto" loading="lazy" /></div>
-          <div class="clientes__item reveal"><img src="Logo_clientes/4.png" alt="Shineray" loading="lazy" /></div>
-          <div class="clientes__item reveal"><img src="Logo_clientes/5.png" alt="Pet & Cia" loading="lazy" /></div>
-          <div class="clientes__item reveal"><img src="Logo_clientes/6.png" alt="CONAJE" loading="lazy" /></div>
-          <div class="clientes__item clientes__item--zoom reveal"><img src="Logo_clientes/7.png" alt="Jéssica Estevam" loading="lazy" /></div>
-          <div class="clientes__item reveal"><img src="Logo_clientes/8.png" alt="Camila Genoveva" loading="lazy" /></div>
-          <div class="clientes__item reveal"><img src="Logo_clientes/9.png" alt="MAUS Corretora" loading="lazy" /></div>
-          <div class="clientes__item clientes__item--fill reveal"><img src="Logo_clientes/10.png" alt="ARCO Arquitetura" loading="lazy" /></div>
-          <div class="clientes__item clientes__item--fill reveal"><img src="Logo_clientes/11.png" alt="Instituto BRIO" loading="lazy" /></div>
-          <div class="clientes__item reveal"><img src="Logo_clientes/12.png" alt="Ariane Souza" loading="lazy" /></div>
-          <div class="clientes__item reveal"><img src="Logo_clientes/13.png" alt="HAGALAN" loading="lazy" /></div>
-          <div class="clientes__item clientes__item--zoom reveal"><img src="Logo_clientes/14.png" alt="Suellen Guedes" loading="lazy" /></div>
-          <div class="clientes__item reveal"><img src="Logo_clientes/16.png" alt="Ô Fuxico Bar" loading="lazy" /></div>
-          <div class="clientes__item clientes__item--zoom clientes__item--cream reveal"><img src="Logo_clientes/17.png" alt="Juliane Alves Clinic" loading="lazy" /></div>
-          <div class="clientes__item reveal"><img src="Logo_clientes/18.png" alt="Solar da Praça" loading="lazy" /></div>
-          <div class="clientes__item reveal"><img src="Logo_clientes/19.png" alt="Dra Bruna Covre" loading="lazy" /></div>
-          <div class="clientes__item clientes__item--fill reveal"><img src="Logo_clientes/20.png" alt="Nathália Dantas" loading="lazy" /></div>
+        <div class="clientes__head reveal">
+          <p class="section__overline section__overline--center">Quem já confia</p>
+          <h2 class="section__title section__title--center">+100 marcas já escolheram <span class="text--grad">não fazer sozinhas</span></h2>
         </div>
       </div>
+      <div class="logos" aria-label="Marcas atendidas pela Seja Create">
+        <div class="logos__track">
+          <div class="logos__group">
+            <div class="logos__item"><img src="Logo_clientes/1.png" alt="GN Construções" loading="lazy" /></div>
+            <div class="logos__item"><img src="Logo_clientes/2.png" alt="Ariane Souza" loading="lazy" /></div>
+            <div class="logos__item"><img src="Logo_clientes/3.png" alt="Uniodonto" loading="lazy" /></div>
+            <div class="logos__item"><img src="Logo_clientes/4.png" alt="Shineray" loading="lazy" /></div>
+            <div class="logos__item"><img src="Logo_clientes/5.png" alt="Pet & Cia" loading="lazy" /></div>
+            <div class="logos__item"><img src="Logo_clientes/6.png" alt="CONAJE" loading="lazy" /></div>
+            <div class="logos__item"><img src="Logo_clientes/7.png" alt="Jéssica Estevam" loading="lazy" /></div>
+            <div class="logos__item"><img src="Logo_clientes/8.png" alt="Camila Genoveva" loading="lazy" /></div>
+            <div class="logos__item"><img src="Logo_clientes/9.png" alt="MAUS Corretora" loading="lazy" /></div>
+            <div class="logos__item"><img src="Logo_clientes/10.png" alt="ARCO Arquitetura" loading="lazy" /></div>
+            <div class="logos__item"><img src="Logo_clientes/11.png" alt="Instituto BRIO" loading="lazy" /></div>
+            <div class="logos__item"><img src="Logo_clientes/13.png" alt="HAGALAN" loading="lazy" /></div>
+            <div class="logos__item"><img src="Logo_clientes/14.png" alt="Suellen Guedes" loading="lazy" /></div>
+            <div class="logos__item"><img src="Logo_clientes/16.png" alt="Ô Fuxico Bar" loading="lazy" /></div>
+            <div class="logos__item"><img src="Logo_clientes/17.png" alt="Juliane Alves Clinic" loading="lazy" /></div>
+            <div class="logos__item"><img src="Logo_clientes/18.png" alt="Solar da Praça" loading="lazy" /></div>
+            <div class="logos__item"><img src="Logo_clientes/19.png" alt="Dra Bruna Covre" loading="lazy" /></div>
+            <div class="logos__item"><img src="Logo_clientes/20.png" alt="Nathália Dantas" loading="lazy" /></div>
+          </div>
+          <div class="logos__group" aria-hidden="true">
+            <div class="logos__item"><img src="Logo_clientes/1.png" alt="" loading="lazy" /></div>
+            <div class="logos__item"><img src="Logo_clientes/2.png" alt="" loading="lazy" /></div>
+            <div class="logos__item"><img src="Logo_clientes/3.png" alt="" loading="lazy" /></div>
+            <div class="logos__item"><img src="Logo_clientes/4.png" alt="" loading="lazy" /></div>
+            <div class="logos__item"><img src="Logo_clientes/5.png" alt="" loading="lazy" /></div>
+            <div class="logos__item"><img src="Logo_clientes/6.png" alt="" loading="lazy" /></div>
+            <div class="logos__item"><img src="Logo_clientes/7.png" alt="" loading="lazy" /></div>
+            <div class="logos__item"><img src="Logo_clientes/8.png" alt="" loading="lazy" /></div>
+            <div class="logos__item"><img src="Logo_clientes/9.png" alt="" loading="lazy" /></div>
+            <div class="logos__item"><img src="Logo_clientes/10.png" alt="" loading="lazy" /></div>
+            <div class="logos__item"><img src="Logo_clientes/11.png" alt="" loading="lazy" /></div>
+            <div class="logos__item"><img src="Logo_clientes/13.png" alt="" loading="lazy" /></div>
+            <div class="logos__item"><img src="Logo_clientes/14.png" alt="" loading="lazy" /></div>
+            <div class="logos__item"><img src="Logo_clientes/16.png" alt="" loading="lazy" /></div>
+            <div class="logos__item"><img src="Logo_clientes/17.png" alt="" loading="lazy" /></div>
+            <div class="logos__item"><img src="Logo_clientes/18.png" alt="" loading="lazy" /></div>
+            <div class="logos__item"><img src="Logo_clientes/19.png" alt="" loading="lazy" /></div>
+            <div class="logos__item"><img src="Logo_clientes/20.png" alt="" loading="lazy" /></div>
+          </div>
+        </div>
+      </div>
+      <div class="container section-cta reveal">
+        <a href="#contato" class="btn btn--primary btn--lg">Quero fazer parte</a>
+      </div>
     </section>
+
+    <!-- ===== MARQUEE DARK ===== -->
+    <div class="marquee marquee--dark" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span class="marquee__item">Sua marca merece ser percebida</span>
+          <span class="marquee__item">Presença que vira preferência</span>
+          <span class="marquee__item">Menos improviso, mais intenção</span>
+          <span class="marquee__item">Marcas fortes permanecem</span>
+        </div>
+        <div class="marquee__group">
+          <span class="marquee__item">Sua marca merece ser percebida</span>
+          <span class="marquee__item">Presença que vira preferência</span>
+          <span class="marquee__item">Menos improviso, mais intenção</span>
+          <span class="marquee__item">Marcas fortes permanecem</span>
+        </div>
+      </div>
+    </div>
 
     <!-- ===== SOBRE RUTH ===== -->
     <section class="sobre" id="sobre">
       <div class="sobre__diagonal"></div>
       <div class="container sobre__inner">
         <div class="sobre__image reveal reveal--left">
-          <img src="Fotos_CEO/-(HM)%20(30).jpg" alt="Ruth Medeiros — Fundadora e Estrategista da Seja Create" loading="lazy" />
+          <img src="Fotos_CEO/-(HM)%20(30).jpeg" alt="Ruth Medeiros, Fundadora e Estrategista da Seja Create" loading="lazy" />
           <div class="sobre__image-tag">
             <strong>Ruth Medeiros</strong>
             <span>Fundadora &amp; Estrategista</span>
@@ -203,9 +365,9 @@
         </div>
         <div class="sobre__content reveal">
           <p class="section__overline">Quem está por trás</p>
-          <h2>Uma estrategista que entende <span class="text--purple">o negócio por trás da marca</span></h2>
+          <h2>Uma estrategista que entende <span class="text--grad">o negócio por trás da marca</span></h2>
           <p class="sobre__lead">Ruth Medeiros construiu a Seja Create com uma convicção: marcas não crescem com criatividade aleatória. Crescem com estratégia, narrativa e execução consistente.</p>
-          <p>Com experiência em gestão de marca, conteúdo estratégico e lançamentos digitais, Ruth une visão de negócio com sensibilidade criativa para entregar comunicação que realmente funciona.</p>
+          <p>Quem confia o marketing à Seja Create não compra "post bonito". Compra tranquilidade: alguém que pensa no seu negócio enquanto você cuida dele. É menos uma aba aberta na sua cabeça.</p>
           <ul class="sobre__list">
             <li>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
@@ -217,13 +379,12 @@
             </li>
             <li>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              Mentora de Social Medias e Experts
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              Sediada em Natal/RN — atende em todo o Brasil
+              Mentora de Empresárias
             </li>
           </ul>
+          <div class="section-cta section-cta--left reveal">
+            <a href="#contato" class="btn btn--primary btn--lg">Falar com a Seja Create</a>
+          </div>
         </div>
       </div>
     </section>
@@ -231,18 +392,17 @@
     <!-- ===== DEPOIMENTOS ===== -->
     <section class="depoimentos" id="depoimentos">
       <div class="container">
-        <p class="section__overline reveal">O que dizem sobre nós</p>
-        <h2 class="section__title reveal">Marcas que já foram <span class="text--purple">transformadas</span></h2>
+        <div class="depoimentos__head reveal">
+          <p class="section__overline section__overline--center">O que dizem sobre nós</p>
+          <h2 class="section__title section__title--center">Quem delegou, <span class="text--grad">não voltou atrás</span></h2>
+        </div>
         <div class="depoimentos__grid">
           <div class="depoimentos__card reveal">
             <div class="depoimentos__stars">★★★★★</div>
-            <p>"Profissionais muito competentes e atenciosos, confio o marketing da minha empresa a eles de olhos fechados."</p>
+            <p>"Profissionais muito competentes e atenciosos. Confio o marketing da minha empresa a eles de olhos fechados."</p>
             <div class="depoimentos__author">
               <div class="depoimentos__avatar">K</div>
-              <div>
-                <strong>Karina</strong>
-                <span>Beleza</span>
-              </div>
+              <div><strong>Karina</strong><span>Beleza</span></div>
             </div>
           </div>
           <div class="depoimentos__card depoimentos__card--featured reveal">
@@ -250,114 +410,50 @@
             <p>"Finalmente entendi o que é posicionamento de verdade. A Ruth tem uma visão estratégica que vai muito além do conteúdo bonito. Ela pensa no seu negócio."</p>
             <div class="depoimentos__author">
               <div class="depoimentos__avatar">C</div>
-              <div>
-                <strong>Carlos</strong>
-                <span>Empresário — Setor de Serviços</span>
-              </div>
+              <div><strong>Carlos</strong><span>Empresário · Serviços</span></div>
             </div>
           </div>
           <div class="depoimentos__card reveal">
             <div class="depoimentos__stars">★★★★★</div>
-            <p>"Uma empresa comprometida, inovadora e acolhedora. Que captou com muita presteza e sensibilidade a nossa necessidade. Que esta nossa parceria continue trazendo muitos frutos. Muitos aplausos, Seja Create!!! 👏👏💜💜"</p>
+            <p>"Uma empresa comprometida, inovadora e acolhedora, que captou com sensibilidade a nossa necessidade. Que esta parceria continue trazendo muitos frutos. Muitos aplausos, Seja Create! 👏💜"</p>
             <div class="depoimentos__author">
               <div class="depoimentos__avatar">T</div>
-              <div>
-                <strong>Thereza</strong>
-                <span>Contabilidade</span>
-              </div>
+              <div><strong>Thereza</strong><span>Contabilidade</span></div>
             </div>
           </div>
+        </div>
+        <div class="section-cta reveal">
+          <a href="#contato" class="btn btn--primary btn--lg">Quero esse resultado</a>
         </div>
       </div>
     </section>
 
-    <!-- ===== FAQ ===== -->
-    <section class="faq" id="faq">
-      <div class="container faq__inner">
-        <div class="faq__header reveal">
-          <p class="section__overline">Perguntas frequentes</p>
-          <h2>Tire suas <span class="text--purple">dúvidas</span></h2>
-          <p>Se ainda tiver alguma, é só chamar no WhatsApp.</p>
-          <a href="https://wa.me/5584999999999" class="btn btn--outline" target="_blank" rel="noopener">Falar no WhatsApp</a>
-        </div>
-        <div class="faq__list">
-          <div class="faq__item reveal">
-            <button class="faq__question" aria-expanded="false">
-              <span>A Seja Create atende empresas de qualquer segmento?</span>
-              <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-            </button>
-            <div class="faq__answer">
-              <p>Sim. Atendemos empresas e profissionais de diferentes segmentos: saúde, beleza, serviços, tecnologia, moda, educação e muito mais. Nossa abordagem é personalizada para cada marca e contexto.</p>
-            </div>
-          </div>
-          <div class="faq__item reveal">
-            <button class="faq__question" aria-expanded="false">
-              <span>Quanto custa contratar a Seja Create?</span>
-              <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-            </button>
-            <div class="faq__answer">
-              <p>Cada proposta é personalizada de acordo com os serviços, escopo e objetivos da sua marca. Chame no WhatsApp para uma conversa sem compromisso.</p>
-            </div>
-          </div>
-          <div class="faq__item reveal">
-            <button class="faq__question" aria-expanded="false">
-              <span>Vocês atendem fora de Natal/RN?</span>
-              <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-            </button>
-            <div class="faq__answer">
-              <p>Sim! Atendemos clientes em todo o Brasil de forma 100% remota. Nossa metodologia funciona independente da localização.</p>
-            </div>
-          </div>
-          <div class="faq__item reveal">
-            <button class="faq__question" aria-expanded="false">
-              <span>Como funciona o processo de início do trabalho?</span>
-              <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-            </button>
-            <div class="faq__answer">
-              <p>Após o primeiro contato, realizamos uma conversa de diagnóstico para entender sua marca, objetivos e desafios. A partir daí, montamos uma proposta personalizada com o escopo ideal para você.</p>
-            </div>
-          </div>
-          <div class="faq__item reveal">
-            <button class="faq__question" aria-expanded="false">
-              <span>Em quanto tempo começo a ver resultados?</span>
-              <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-            </button>
-            <div class="faq__answer">
-              <p>Resultados de posicionamento e percepção começam a aparecer nas primeiras semanas. Resultados comerciais dependem do serviço contratado, consistência e objetivos definidos juntos. Somos transparentes em cada etapa.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== CONTATO ===== -->
+    <!-- ===== CTA FINAL / CONTATO ===== -->
     <section class="contato" id="contato">
-      <div class="contato__bg-shape"></div>
-      <div class="container contato__inner">
-        <div class="contato__content reveal">
-          <p class="section__overline section__overline--light">Próximo passo</p>
-          <h2 class="contato__title">
-            Vamos tirar sua comunicação<br />
-            <span class="text--purple-light">do improviso</span>
-          </h2>
-          <p class="contato__desc">
-            Fale diretamente com a Ruth no WhatsApp. Em poucos minutos, entendemos sua marca e te apresentamos as melhores soluções.
-          </p>
-          <a href="https://wa.me/5584999999999?text=Ol%C3%A1%2C+Ruth%21+Vim+pelo+site+da+Seja+Create+e+quero+posicionar+minha+marca." class="btn btn--whatsapp" target="_blank" rel="noopener">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-            </svg>
-            Chamar no WhatsApp
-          </a>
-          <div class="contato__info">
-            <div class="contato__info-item">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-              Natal, Rio Grande do Norte
-            </div>
-            <div class="contato__info-item">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-              contato@sejacreate.com.br
-            </div>
+      <div class="container contato__inner reveal">
+        <p class="section__overline section__overline--light section__overline--center">Próximo passo</p>
+        <h2 class="contato__title">
+          Sua agenda continua cheia.<br />
+          Sua marca, <em>finalmente vista.</em>
+        </h2>
+        <p class="contato__desc">
+          Fale agora no WhatsApp. Em poucos minutos entendemos seu momento e te mostramos
+          como tirar suas redes do improviso, sem tomar mais um minuto do seu dia.
+        </p>
+        <a href="https://wa.me/5584994137882?text=Ol%C3%A1!%20Quero%20delegar%20minhas%20redes%20%C3%A0%20Seja%20Create." class="btn btn--whatsapp btn--lg" target="_blank" rel="noopener">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          Quero delegar minhas redes
+        </a>
+        <div class="contato__info">
+          <div class="contato__info-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Natal/RN · atendemos o mundo todo
+          </div>
+          <div class="contato__info-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            sejacreate@gmail.com
           </div>
         </div>
       </div>
@@ -370,23 +466,24 @@
     <div class="container footer__inner">
       <div class="footer__brand">
         <img src="Identidade%20Visual/SejaCreate_Logo_Modelo_1_01%20(1).png" alt="Seja Create" />
-        <p>Transformamos marcas em presença, desejo e escolha no digital.</p>
-        <p class="footer__location">Natal/RN — Atendemos todo o Brasil</p>
+        <p>Você atende. A gente aparece. Marketing estratégico para quem não tem tempo de fazer.</p>
+        <p class="footer__location">Natal/RN · atendemos o mundo todo</p>
       </div>
       <div class="footer__links">
         <h4>Serviços</h4>
         <ul>
           <li><a href="#servicos">Gestão de Redes Sociais</a></li>
           <li><a href="#servicos">Identidade Visual</a></li>
-          <li><a href="#servicos">Lançamentos Digitais</a></li>
-          <li><a href="#servicos">Páginas de Vendas</a></li>
+          <li><a href="#servicos">Tráfego Pago</a></li>
+          <li><a href="#servicos">Sites</a></li>
           <li><a href="#servicos">Consultoria</a></li>
         </ul>
       </div>
       <div class="footer__links">
         <h4>Navegação</h4>
         <ul>
-          <li><a href="#clientes">Portfolio</a></li>
+          <li><a href="#resultados">Resultados</a></li>
+          <li><a href="#clientes">Clientes</a></li>
           <li><a href="#sobre">Sobre Ruth</a></li>
           <li><a href="#depoimentos">Depoimentos</a></li>
           <li><a href="#contato">Contato</a></li>
@@ -398,33 +495,27 @@
           <a href="https://instagram.com/sejacreate" target="_blank" rel="noopener" class="footer__icon-btn" aria-label="Instagram">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
           </a>
-          <a href="https://wa.me/5584999999999" target="_blank" rel="noopener" class="footer__icon-btn" aria-label="WhatsApp">
+          <a href="https://wa.me/5584994137882" target="_blank" rel="noopener" class="footer__icon-btn" aria-label="WhatsApp">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           </a>
-          <a href="mailto:contato@sejacreate.com.br" class="footer__icon-btn" aria-label="E-mail">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sejacreate@gmail.com&su=Quero%20conhecer%20a%20Seja%20Create" target="_blank" rel="noopener" class="footer__icon-btn" aria-label="E-mail">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
           </a>
-          <a href="https://www.linkedin.com/company/sejacreate" target="_blank" rel="noopener" class="footer__icon-btn" aria-label="LinkedIn">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          </a>
         </div>
-        <a href="mailto:contato@sejacreate.com.br" class="footer__email">contato@sejacreate.com.br</a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sejacreate@gmail.com&su=Quero%20conhecer%20a%20Seja%20Create" target="_blank" rel="noopener" class="footer__email">sejacreate@gmail.com</a>
       </div>
     </div>
     <div class="footer__bottom">
       <div class="container footer__bottom-inner">
-        <p>© 2025 Seja Create. Todos os direitos reservados.</p>
-        <p>Natal/RN — Estratégia, narrativa e presença digital.</p>
+        <p>© 2026 Seja Create. Todos os direitos reservados.</p>
+        <p>Natal/RN · Estratégia, narrativa e presença digital.</p>
       </div>
     </div>
   </footer>
 
   <!-- ===== WHATSAPP FLOAT ===== -->
-  <a href="https://wa.me/5584999999999?text=Ol%C3%A1%2C+quero+posicionar+minha+marca%21+Vi+o+site+da+Seja+Create."
-     class="whatsapp-float"
-     target="_blank"
-     rel="noopener"
-     aria-label="Chamar no WhatsApp">
+  <a href="https://wa.me/5584994137882?text=Ol%C3%A1%2C%20quero%20delegar%20minhas%20redes!%20Vi%20o%20site%20da%20Seja%20Create."
+     class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">
     <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
     </svg>
