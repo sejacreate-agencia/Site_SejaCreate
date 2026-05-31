@@ -563,31 +563,48 @@ h1, h2, h3, h4 {
 }
 /* Card central — balão de conversa */
 .glass-card--main {
-  width: 50%; height: 50%;
-  left: 25%; top: 25%;
-  border-radius: 34px;
+  width: 44%; height: 44%;
+  left: 28%; top: 28%;
+  border-radius: 30px;
   animation: float 5.4s ease-in-out infinite;
 }
 .glass-card--main svg { width: 48%; height: 48%; color: #fff; }
-/* Chips menores */
+/* Chip de métrica (pill) */
 .glass-chip {
   gap: 8px;
-  padding: 0 16px;
-  height: 56px;
-  border-radius: 18px;
+  padding: 0 15px;
+  height: 50px;
+  border-radius: 16px;
   font-family: var(--ff-heading);
   font-weight: var(--fw-bold);
   font-size: 14px;
   letter-spacing: 0.2px;
 }
-.glass-chip svg { width: 22px; height: 22px; flex-shrink: 0; }
-.glass-chip--like   { top: 4%;  right: 0;   animation: float 4.6s ease-in-out infinite 0.3s; }
-.glass-chip--like svg   { color: #FF5C8A; }
-.glass-chip--play   { width: 66px; height: 66px; padding: 0; border-radius: 22px;
-                      left: 0; top: 34%; animation: float 5.8s ease-in-out infinite 0.6s; }
-.glass-chip--play svg   { width: 26px; height: 26px; margin-left: 3px; }
-.glass-chip--growth { bottom: 4%; left: 16%; animation: float 5s ease-in-out infinite 0.9s; }
+.glass-chip svg { width: 20px; height: 20px; flex-shrink: 0; }
+.glass-chip--growth { top: 40%; left: -3%; animation: float 5s ease-in-out infinite 0.9s; }
 .glass-chip--growth svg { color: #57E39B; }
+
+/* Chips de redes sociais */
+.glass-soc {
+  position: absolute;
+  width: 54px; height: 54px;
+  border-radius: 16px;
+  display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(135deg, rgba(255,255,255,0.18) 0%, rgba(139,45,159,0.10) 100%);
+  border: 1px solid rgba(255,255,255,0.22);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow:
+    0 16px 40px rgba(0,0,0,0.42),
+    0 0 30px rgba(196,42,168,0.18),
+    inset 0 1px 0 rgba(255,255,255,0.30);
+}
+.glass-soc svg { width: 26px; height: 26px; }
+.glass-soc--ig { top: 1%;    left: 8%;   color: #E84393; animation: float 5.2s ease-in-out infinite 0.1s; }
+.glass-soc--tt { top: 4%;    right: 5%;  color: #FFFFFF; animation: float 4.7s ease-in-out infinite 0.5s; }
+.glass-soc--yt { top: 43%;   right: -4%; color: #FF4D4D; animation: float 5.6s ease-in-out infinite 0.8s; }
+.glass-soc--li { bottom: 7%; right: 7%;  color: #4AA8FF; animation: float 4.9s ease-in-out infinite 1.1s; }
+.glass-soc--fb { bottom: 2%; left: 11%;  color: #4D8DFF; animation: float 5.3s ease-in-out infinite 0.35s; }
 
 /* ===== MARQUEE (faixa banner) ===== */
 .marquee {
@@ -1285,9 +1302,10 @@ h1, h2, h3, h4 {
   .hero__text { max-width: 100%; }
   .hero__headline { overflow-wrap: break-word; }
   .hero__visual { order: -1; }
-  .hero__glass { max-width: 300px; }
-  .glass-chip { height: 50px; font-size: 13px; }
-  .glass-chip--play { width: 58px; height: 58px; }
+  .hero__glass { max-width: 310px; }
+  .glass-chip { height: 44px; font-size: 12.5px; }
+  .glass-soc { width: 46px; height: 46px; border-radius: 14px; }
+  .glass-soc svg { width: 22px; height: 22px; }
   .hero__img-wrap img { max-height: 380px; }
   .hero__img-badge { left: 8px; bottom: -10px; width: 54px; height: 54px; padding: 13px; }
   .hero__img-chip { right: 8px; top: 16px; padding: 10px 14px; }
@@ -1356,7 +1374,9 @@ h1, h2, h3, h4 {
   .container { padding: 0 16px; }
   .nav__logo img { height: 36px; }
   .hero__headline { font-size: 27px; line-height: 1.12; letter-spacing: -0.02em; }
-  .hero__glass { max-width: 250px; }
+  .hero__glass { max-width: 280px; }
+  .glass-soc { width: 42px; height: 42px; }
+  .glass-soc svg { width: 20px; height: 20px; }
   .hero__sub { font-size: 15px; }
   .hero__trust-item strong { font-size: 19px; }
   .servicos__card, .dor__card, .solucao__step { padding: 24px 22px; }
